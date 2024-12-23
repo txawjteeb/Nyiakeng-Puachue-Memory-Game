@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+@font-face {
+  font-family: 'Noto Sans Nyiakeng Puachue Hmong';
+  src: url('https://cdn.jsdelivr.net/gh/notofonts/noto-fonts@main/unhinted/ttf/NotoSansNyiakengPuachueHmong/NotoSansNyiakengPuachueHmong-Regular.ttf') format('truetype');
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #0284c7;
+}
